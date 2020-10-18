@@ -21,8 +21,8 @@ map.on('click', (event) => {
     const lat = event.latlng.lat;
     const lng = event.latlng.lng;
 
-    document.getQuerySelector('[name=lat]').value = lat;
-    document.getQuerySelector('[name=lng]').value = lng;
+    document.querySelector('[name=lat]').value = lat;
+    document.querySelector('[name=lng]').value = lng;
 
     // remove previous icon
     marker && map.removeLayer(marker)
